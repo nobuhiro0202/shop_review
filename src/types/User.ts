@@ -5,10 +5,10 @@ export interface User {
   name: string,
   createdAt: Timestamp,
   updatedAt: Timestamp,
-}
+};
 
-export const initialUser = {
+export const initialUser: User = {
   name: '',
-  createdAt: new Date(),
-  updatedAt: new Date(),
+  createdAt: Timestamp.now(),
+  updatedAt: Timestamp.now(),
 };

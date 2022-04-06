@@ -1,6 +1,9 @@
 import { FirebaseApp, getApps, initializeApp } from 'firebase/app'
-import { getFirestore } from 'firebase/firestore'
-import { getAuth } from "firebase/auth";
+import { 
+  getFirestore,
+  doc
+ } from 'firebase/firestore'
+import { getAuth, signInAnonymously } from "firebase/auth";
 import Constants from "expo-constants";
 
 function getFirebaseApp(): FirebaseApp {
@@ -13,4 +16,11 @@ function getFirebaseApp(): FirebaseApp {
 
 const app = getFirebaseApp();
 export const firestore = getFirestore(app);
-export const auth = getAuth(app);
+
+export const signin = async () => {
+  const auth = getAuth();
+  const userCredentials = await signInAnonymously(auth);
+  const { uid } = userCredentials?.user;
+  const userRef = doc(firestore, 'users', uid);
+  // if(!userRef)
+}
