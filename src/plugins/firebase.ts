@@ -11,6 +11,6 @@ function getFirebaseApp(): FirebaseApp {
   return initializeApp(Constants?.manifest?.extra?.firebase);
 }
 
-const app = getFirebaseApp()
-export const firestore = getFirestore(app)
+const app = getFirebaseApp();
+export const firestore = getFirestore(app);
 export const auth = getAuth(app);

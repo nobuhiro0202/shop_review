@@ -1,10 +1,10 @@
-import firebase from 'firebase/app'
+import { Timestamp } from 'firebase/firestore'
 
 export interface User {
   id?: string,
   name: string,
-  createdAt: firebase.firestore.Timestamp,
-  updatedAt: new Date(),
+  createdAt: Timestamp,
+  updatedAt: Timestamp,
 }
 
 export const initialUser = {

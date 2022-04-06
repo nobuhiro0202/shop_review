@@ -30,13 +30,13 @@
     },
     "extra": {
       "firebase": {
-        "apiKey": "AIzaSyBcnJo7ycKOo3aaUct13wK_3fTUvaiqIQM",
-        "authDomain": "shop-review-d91ba.firebaseapp.com",
-        "projectId": "shop-review-d91ba",
-        "storageBucket": "shop-review-d91ba.appspot.com",
-        "messagingSenderId": "171923236448",
-        "appId": "1:171923236448:web:c97f018fbf7e61455ac505",
-        "measurementId": "G-JKECWGY1RG"
+        "apiKey": "AIzaSyAKzvA2ouhVrWiCA5m8xWW4CawOyOvm63Y",
+        "authDomain": "shop-review-afaed.firebaseapp.com",
+        "projectId": "shop-review-afaed",
+        "storageBucket": "shop-review-afaed.appspot.com",
+        "messagingSenderId": "938742834701",
+        "appId": "1:938742834701:web:cde8bb903a8cfdd2141744",
+        "measurementId": "G-BCP1CVWV11"
       }
     }
   }
