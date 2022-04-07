@@ -12,7 +12,8 @@ export const AuthScreen: FC = () => {
 
   useEffect(() => {
     const fetchUser = async () => {
-      await signin();
+      const user = await signin();
+      console.log(user);//現状undefined
     };
     fetchUser();
   }, []);
